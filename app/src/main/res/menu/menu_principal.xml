@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:id="@+id/menu_1"
+        android:title="Viajes"
+        android:icon="@drawable/ic_bus"/>
+
+    <item android:id="@+id/menu_2"
+        android:title="Mi cuenta"
+        android:icon="@drawable/ic_personman"/>
+
+    <item android:id="@+id/menu_3"
+        android:title="Contacto"
+        android:icon="@drawable/ic_location"/>
+
+
+</menu>
