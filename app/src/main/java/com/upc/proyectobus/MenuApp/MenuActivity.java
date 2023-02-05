@@ -1,4 +1,4 @@
-package com.upc.proyectobus;
+package com.upc.proyectobus.MenuApp;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -10,6 +10,10 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
+import com.upc.proyectobus.MenuApp.bus.Fragment_bus_menu;
+import com.upc.proyectobus.MenuApp.contacto.Fragment_contacto_menu;
+import com.upc.proyectobus.MenuApp.micuenta.Fragment_micuenta_menu;
+import com.upc.proyectobus.R;
 
 public class MenuActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigation;

@@ -1,4 +1,4 @@
-package com.upc.proyectobus;
+package com.upc.proyectobus.MenuApp.bus;
 
 import android.os.Bundle;
 
@@ -8,12 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.upc.proyectobus.R;
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link Fragment_micuenta_menu#newInstance} factory method to
+ * Use the {@link Fragment_bus_menu#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Fragment_micuenta_menu extends Fragment {
+public class Fragment_bus_menu extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +26,7 @@ public class Fragment_micuenta_menu extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public Fragment_micuenta_menu() {
+    public Fragment_bus_menu() {
         // Required empty public constructor
     }
 
@@ -34,11 +36,11 @@ public class Fragment_micuenta_menu extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Fragment_micuenta_menu.
+     * @return A new instance of fragment Fragment_bus_menu.
      */
     // TODO: Rename and change types and number of parameters
-    public static Fragment_micuenta_menu newInstance(String param1, String param2) {
-        Fragment_micuenta_menu fragment = new Fragment_micuenta_menu();
+    public static Fragment_bus_menu newInstance(String param1, String param2) {
+        Fragment_bus_menu fragment = new Fragment_bus_menu();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +61,6 @@ public class Fragment_micuenta_menu extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_micuenta_menu, container, false);
+        return inflater.inflate(R.layout.fragment_bus_menu, container, false);
     }
 }
