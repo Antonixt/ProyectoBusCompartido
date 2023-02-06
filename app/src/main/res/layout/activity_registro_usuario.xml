@@ -1,221 +1,231 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingHorizontal="20dp"
-    tools:context=".RegistroUsuarioActivity">
-
-    <TextView
-        android:id="@+id/lbltitulo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:text="Obten ofertas en tus siguientes viaje"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:padding="10dp"
-        android:background="@drawable/caja"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lbltitulo">
+        android:layout_height="match_parent"
+        android:paddingHorizontal="20dp"
+        android:paddingBottom="20dp"
+        tools:context=".RegistroUsuarioActivity">
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/lbltitulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Datos de Usuario"
+            android:layout_marginTop="25dp"
+            android:text="Obten ofertas en tus siguientes viaje"
+            android:textSize="20sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
-            android:id="@+id/txtDocumento"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Ingrese Nro Documento"
-            android:inputType="number"
-            android:minHeight="48dp"
-            android:background="@drawable/cajafocus"
-            android:paddingHorizontal="10dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/caja"
+            android:padding="10dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            app:layout_constraintTop_toBottomOf="@+id/lbltitulo">
 
-        <EditText
-            android:id="@+id/txtNombres"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/cajafocus"
-            android:ems="10"
-            android:hint="Ingrese sus Nombres"
-            android:inputType="textPersonName"
-            android:minHeight="48dp"
-            android:paddingHorizontal="10dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtDocumento" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Datos de Usuario"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
-            android:id="@+id/txtApellidoPat"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Ingrese Apellido Paterno"
-            android:inputType="textPersonName"
-            android:minHeight="48dp"
-            android:background="@drawable/cajafocus"
-            android:paddingHorizontal="10dp"
-            android:layout_marginTop="8dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtNombres" />
+            <EditText
+                android:id="@+id/txtDocumento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cajafocus"
+                android:ems="10"
+                android:hint="Ingrese Nro Documento"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:paddingHorizontal="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-        <EditText
-            android:id="@+id/txtApellidoMat"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Ingrese Apellido Materno"
-            android:inputType="textPersonName"
-            android:minHeight="48dp"
-            android:background="@drawable/cajafocus"
-            android:paddingHorizontal="10dp"
-            android:layout_marginTop="8dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtApellidoPat" />
+            <EditText
+                android:id="@+id/txtNombres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/cajafocus"
+                android:ems="10"
+                android:hint="Ingrese sus Nombres"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:paddingHorizontal="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtDocumento" />
 
-        <EditText
-            android:id="@+id/txtPais"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Ingrese Pais"
-            android:inputType="textPersonName"
-            android:minHeight="48dp"
-            android:background="@drawable/cajafocus"
-            android:paddingHorizontal="10dp"
-            android:layout_marginTop="8dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtApellidoMat" />
+            <EditText
+                android:id="@+id/txtApellidoPat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/cajafocus"
+                android:ems="10"
+                android:hint="Ingrese Apellido Paterno"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:paddingHorizontal="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtNombres" />
 
-        <EditText
-            android:id="@+id/txtCorreo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Ingrese Correo"
-            android:inputType="textEmailAddress"
-            android:minHeight="48dp"
-            android:background="@drawable/cajafocus"
-            android:paddingHorizontal="10dp"
-            android:layout_marginTop="8dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtPais" />
+            <EditText
+                android:id="@+id/txtApellidoMat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/cajafocus"
+                android:ems="10"
+                android:hint="Ingrese Apellido Materno"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:paddingHorizontal="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtApellidoPat" />
 
-        <EditText
-            android:id="@+id/txtTelefono"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Ingrese Telefono"
-            android:inputType="phone"
-            android:minHeight="48dp"
-            android:background="@drawable/cajafocus"
-            android:paddingHorizontal="10dp"
-            android:layout_marginTop="8dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtCorreo" />
+            <EditText
+                android:id="@+id/txtPais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/cajafocus"
+                android:ems="10"
+                android:hint="Ingrese Pais"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:paddingHorizontal="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtApellidoMat" />
+
+            <EditText
+                android:id="@+id/txtCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/cajafocus"
+                android:ems="10"
+                android:hint="Ingrese Correo"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:paddingHorizontal="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtPais" />
+
+            <EditText
+                android:id="@+id/txtTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/cajafocus"
+                android:ems="10"
+                android:hint="Ingrese Telefono"
+                android:inputType="phone"
+                android:minHeight="48dp"
+                android:paddingHorizontal="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtCorreo" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Contraseña"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTelefono" />
+
+            <EditText
+                android:id="@+id/txtPasswordA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cajafocus"
+                android:ems="10"
+                android:hint="Ingrese Contraseña"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:paddingHorizontal="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <EditText
+                android:id="@+id/txtPasswordB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/cajafocus"
+                android:ems="10"
+                android:hint="Ingrese Contraseña"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:paddingHorizontal="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtPasswordA" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Contraseña"
+            android:text="Al registrarse, acepta nuestros terminos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Términos y condiciones"
+            android:textColor="#2196F3"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtTelefono" />
-
-        <EditText
-            android:id="@+id/txtPasswordA"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Ingrese Contraseña"
-            android:inputType="textPassword"
-            android:minHeight="48dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/cajafocus"
-            android:paddingHorizontal="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-        <EditText
-            android:id="@+id/txtPasswordB"
+        <Button
+            android:id="@+id/btnConfirmarRegistro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/cajafocus"
-            android:ems="10"
-            android:hint="Ingrese Contraseña"
-            android:inputType="textPassword"
-            android:minHeight="48dp"
-            android:paddingHorizontal="10dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/fondo_btn_rojo"
+            android:text="confirmar registro"
+            android:textColor="@color/rojo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtPasswordA" />
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Al registrarse, acepta nuestros terminos"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Términos y condiciones"
-        android:textColor="#2196F3"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <Button
-        android:id="@+id/btnConfirmarRegistro"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:background="#FD1E1E"
-        android:text="confirmar registro"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
