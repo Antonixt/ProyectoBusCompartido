@@ -92,7 +92,7 @@ public class RegistroUsuarioActivity extends AppCompatActivity {
         ventana.setTitle("Mensaje Informativo");
         ventana.setMessage(mensaje);
         ventana.setPositiveButton("Aceptar",(dialogInterface, i) -> {
-            Intent intent = new Intent(this, MainActivity.class);
+            Intent intent = new Intent(this, LoginActivity2.class);
             startActivity(intent);
         });
         ventana.create().show();
