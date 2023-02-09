@@ -27,4 +27,8 @@
     <string name="search_buses">BUSCAR BUSES</string>
     <string name="signature_declarationJ">Firma tu Declaración de Viaje</string>
     <string name="travel_title">Elige tu próxima aventura</string>
+    <string name="filters">Filtros</string>
+    <string name="night">Noche</string>
+    <string name="afternoon">Tarde</string>
+    <string name="tomorrow">Mañana</string>
 </resources>
