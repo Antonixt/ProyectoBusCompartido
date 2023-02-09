@@ -31,4 +31,7 @@
     <string name="night">Noche</string>
     <string name="afternoon">Tarde</string>
     <string name="tomorrow">Mañana</string>
+    <string name="text_tittle_destiny">Conoce tu próxima aventura</string>
+    <string name="from_text">Desde</string>
+
 </resources>
