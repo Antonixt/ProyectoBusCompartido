@@ -3,4 +3,28 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="textview">TextView</string>
+
+    <!-- ESTO AGREGUÉ. -->
+
+    <string name="total_price">Precio total</string>
+    <string name="seating">Asientos</string>
+    <string name="option_1_chair">1er piso (180º)</string>
+    <string name="option_2_chair">2do piso (160º)</string>
+    <string name="number">N00</string>
+    <string name="services1">Servicios</string>
+    <string name="button_next">CONTINUAR</string>
+    <string name="text_select_chair_going">Elige tus asientos de ida</string>
+    <string name="photos">Fotos</string>
+    <string name="text_from">Desde</string>
+    <string name="your_location">Tu ubicación</string>
+    <string name="text_to">Hasta</string>
+    <string name="your_destiny">Tu destino</string>
+    <string name="text_departure">Ida</string>
+    <string name="today">Hoy</string>
+    <string name="text_return">Vuelta</string>
+    <string name="select_a_date">Elige una fecha</string>
+    <string name="one_way">Solo ida</string>
+    <string name="search_buses">BUSCAR BUSES</string>
+    <string name="signature_declarationJ">Firma tu Declaración de Viaje</string>
+    <string name="travel_title">Elige tu próxima aventura</string>
 </resources>
