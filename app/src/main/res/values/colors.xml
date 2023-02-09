@@ -10,5 +10,8 @@
     <color name="institucional">#196a3d</color>
     <color name="celeste">#2196F3</color>
     <color name="plomo">#6B6E6E</color>
+    <color name="gris">#AEAEAE</color>
+    <color name="rojo">#DD0D0D</color>
+    <color name="red">#DD0D0D</color>
 
 </resources>
