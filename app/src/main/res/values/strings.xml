@@ -34,6 +34,11 @@
     <string name="text_tittle_destiny">Conoce tu próxima aventura</string>
     <string name="from_text">Desde</string>
     <string name="text_bus_bed">Bus cama 160º</string>
+    <string name="purchase_message">Tu compra se realizó\10 con éxito</string>
+    <string name="show_qr_enter_bus">Mostrando el código QR, los\10 pasajeros podrán ingresar al bus</string>
+    <string name="send_electronic_ticket_email">Se te envió a tu correo tu ticket electrónico\10con el resúmen de la compra</string>
+    <string name="show_ticket_button">MOSTRAR RESÚMEN</string>
+    <string name="return1">VOLVER</string>
 
 
 </resources>
