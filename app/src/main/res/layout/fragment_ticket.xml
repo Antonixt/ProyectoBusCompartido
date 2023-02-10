@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/viewTicket"
+        android:layout_width="@dimen/ticket_width"
+        android:layout_height="@dimen/ticket_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <ImageView
+            android:id="@+id/imageMask"
+            android:layout_width="360dp"
+            android:layout_height="549dp"
+            android:src="@drawable/mask"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="328dp"
+            android:layout_height="500dp"
+            android:background="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/viewTop"
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:background="@color/green"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/viewHeader"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/titleOri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ORI"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_title_ticket"
+                        app:fontFamily="@font/montserrat_bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/titleOrigen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="origen"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_body3"
+                        app:fontFamily="@font/montserrat_bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/titleOri" />
+
+                    <TextView
+                        android:id="@+id/titleDes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DES"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_title_ticket"
+                        app:fontFamily="@font/montserrat_bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/titleDestino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="destino"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_body3"
+                        app:fontFamily="@font/montserrat_bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imgBus"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/bus_lateral"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:tint="@android:color/white" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/viewHeaderInit"
+                    android:layout_width="76dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="88dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/txtDeparture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Salida"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_body3"
+                        app:fontFamily="@font/montserrat_bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txtDepartureDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dia, 00 Mes"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_body3"
+                        app:fontFamily="@font/montserrat_regular"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txtDepartureHour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hora"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_body3"
+                        app:fontFamily="@font/montserrat_regular"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/viewHeaderEnd"
+                    android:layout_width="76dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="88dp"
+                    android:layout_marginEnd="24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/txtArrival"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Llegada"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_body3"
+                        app:fontFamily="@font/montserrat_bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txtArrivalDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dia, 00 Mes"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_body3"
+                        app:fontFamily="@font/montserrat_regular"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtArrival" />
+
+                    <TextView
+                        android:id="@+id/txtArrivalHour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hora"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_body3"
+                        app:fontFamily="@font/montserrat_regular"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtArrivalDay" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/viewMiddle"
+                android:layout_width="0dp"
+                android:layout_height="188dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewTop">
+
+                <TextView
+                    android:id="@+id/txtPassenger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Pasajero"
+                    android:textColor="@color/text_opacity"
+                    android:textSize="@dimen/text_size_body3"
+                    app:fontFamily="@font/montserrat_regular"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtPassengerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:gravity="top|left|center_vertical|center_horizontal|center"
+                    android:text="Nombre pasajero"
+                    android:textColor="@color/text_opacity"
+                    android:textSize="@dimen/text_size_subtitle2"
+                    app:fontFamily="@font/montserrat_bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtPassenger" />
+
+                <TextView
+                    android:id="@+id/txtDepartureTerminal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="172dp"
+                    android:text="Terminal Llegada"
+                    android:textColor="@color/text_opacity"
+                    android:textSize="@dimen/text_size_body3"
+                    app:fontFamily="@font/montserrat_regular"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtPassengerName" />
+
+                <TextView
+                    android:id="@+id/txtArrivalTerminal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:text="Terminal Salida"
+                    android:textColor="@color/text_opacity"
+                    android:textSize="@dimen/text_size_body3"
+                    app:fontFamily="@font/montserrat_regular"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtPassengerName" />
+
+                <TextView
+                    android:id="@+id/txtDepartureTerminalName"
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="24dp"
+                    android:gravity="top|left|center_vertical|center_horizontal|center"
+                    android:text="N. Terminal"
+                    android:textColor="@color/text_opacity"
+                    android:textSize="@dimen/text_size_subtitle2"
+                    app:fontFamily="@font/montserrat_bold"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDepartureTerminal" />
+
+                <TextView
+                    android:id="@+id/txtArrivalTerminalName"
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="172dp"
+                    android:gravity="top|left|center_vertical|center_horizontal|center"
+                    android:text="N. Terminal"
+                    android:textColor="@color/text_opacity"
+                    android:textSize="@dimen/text_size_subtitle2"
+                    app:fontFamily="@font/montserrat_bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtArrivalTerminal" />
+
+                <TextView
+                    android:id="@+id/txtDepartureTypeBus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:text="Tipo bus"
+                    android:textColor="@color/text_opacity"
+                    android:textSize="@dimen/text_size_body3"
+                    app:fontFamily="@font/montserrat_regular"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtArrivalTerminalName" />
+
+                <TextView
+                    android:id="@+id/txtArrivalTypeBus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="172dp"
+                    android:text="Asiento"
+                    android:textColor="@color/text_opacity"
+                    android:textSize="@dimen/text_size_body3"
+                    app:fontFamily="@font/montserrat_regular"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtArrivalTerminalName" />
+
+                <TextView
+                    android:id="@+id/txtDepartureTypeBusName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:text="Bus"
+                    android:textColor="@color/text_opacity"
+                    android:textSize="@dimen/text_size_subtitle2"
+                    app:fontFamily="@font/montserrat_bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDepartureTypeBus" />
+
+                <TextView
+                    android:id="@+id/txtArrivalSeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="172dp"
+                    android:text="N0"
+                    android:textColor="@color/text_opacity"
+                    android:textSize="@dimen/text_size_subtitle2"
+                    app:fontFamily="@font/montserrat_bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtArrivalTypeBus" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/viewBottom"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewMiddle">
+
+                <TextView
+                    android:id="@+id/txtMessage"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="47dp"
+                    android:text="Mostrando este\10código QR podrás\10ingresar al bus"
+                    android:textColor="@color/text_opacity"
+                    android:textSize="@dimen/text_size_body3"
+                    app:fontFamily="@font/montserrat_regular"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imgQR"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/btnClose"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginRight="@dimen/activity_vertical_margin_image"
+        android:background="@android:color/transparent"
+        android:src="@drawable/close"
+        app:layout_constraintBottom_toTopOf="@+id/viewTicket"
+        app:layout_constraintEnd_toEndOf="@+id/viewTicket"
+        app:tint="@android:color/white"
+        tools:ignore="SpeakableTextPresentCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>
