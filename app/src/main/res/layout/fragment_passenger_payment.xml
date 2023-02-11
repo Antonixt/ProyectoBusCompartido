@@ -21,7 +21,7 @@
 
         <Button
             android:textSize="@dimen/text_size_button"
-            android:textColor="@android:color/white"
+            android:textColor="#AF3B3B"
             android:id="@+id/btnAction"
             android:background="@drawable/background_botton_enable"
             android:layout_width="match_parent"

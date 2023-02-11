@@ -54,6 +54,15 @@
     <string name="phone">Teléfono</string>
     <string name="date_na">Fecha de nacimiento</string>
     <string name="date_ge">Genero</string>
+    <string name="exit">Salida:</string>
+    <string name="exit_number">A7, A33</string>
+    <string name="payment_methods_title">Formas de pago</string>
+    <string name="invoice">¿Factura?</string>
+    <string name="business_name">Razón social</string>
+    <string name="ruc">Ruc</string>
+    <string name="accept_terms_conditions2">Acepto los términos y condiciones</string>
+    <string name="want_subscribe">Deseo suscribirme al boletín y recibir promociones</string>
+    <string name="surnames">Apellidos</string>
 
     <string-array name="documento">
         <item>DNI</item>
