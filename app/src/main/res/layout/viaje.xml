@@ -2,8 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:aapt="http://schemas.android.com/aapt"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
@@ -170,7 +170,7 @@
                                 android:layout_marginLeft="@dimen/activity_horizontal_margin"
                                 android:layout_marginRight="@dimen/activity_horizontal_margin"
                                 android:background="@drawable/background_gray_border_corner_rect"
-                                android:src="@drawable/round_swap_vert_black_24"
+                                android:src="@drawable/round_swap_vert_black_36"
                                 tools:ignore="SpeakableTextPresentCheck" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -216,10 +216,10 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="@dimen/activity_horizontal_margin"
                                         android:layout_marginTop="@dimen/activity_vertical_margin"
+                                        android:fontFamily="@font/montserrat_regular"
                                         android:text="@string/text_departure"
                                         android:textColor="@color/text_opacity"
-                                        android:textSize="@dimen/text_size_label"
-                                        android:fontFamily="@font/montserrat_regular" />
+                                        android:textSize="@dimen/text_size_label" />
 
                                     <LinearLayout
                                         android:layout_width="match_parent"
@@ -232,7 +232,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                                            android:src="@drawable/round_calendar_today_black_18"
+                                            android:src="@drawable/ic_calendar"
                                             app:tint="@color/grey" />
 
                                         <TextView
@@ -241,11 +241,11 @@
                                             android:layout_height="wrap_content"
                                             android:layout_gravity="center_vertical"
                                             android:layout_marginLeft="@dimen/activity_vertical_margin"
-                                            android:text="@string/today"
+                                            android:fontFamily="@font/montserrat_regular"
+                                            android:text="Elige una fecha"
                                             android:textColor="@color/text_opacity"
                                             android:textSize="@dimen/text_size_input"
-                                            android:textStyle="bold"
-                                            android:fontFamily="@font/montserrat_regular" />
+                                            android:textStyle="bold" />
                                     </LinearLayout>
                                 </LinearLayout>
 
@@ -261,10 +261,10 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="@dimen/activity_margin"
                                         android:layout_marginTop="@dimen/activity_vertical_margin"
-                                        android:text="@string/text_return"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:text="Ida - Retorno"
                                         android:textColor="@color/text_opacity"
-                                        android:textSize="@dimen/text_size_label"
-                                        android:fontFamily="@font/montserrat_regular" />
+                                        android:textSize="@dimen/text_size_label" />
 
                                     <LinearLayout
                                         android:layout_width="match_parent"
@@ -273,27 +273,25 @@
                                         android:orientation="horizontal">
 
                                         <ImageView
-                                            android:id="@+id/imgCalendarEnd"
+                                            android:id="@+id/imageView15"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_gravity="center_vertical"
-                                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                                            android:src="@drawable/round_calendar_today_black_24"
-                                            app:tint="@color/grey"
-                                            android:visibility="gone" />
+                                            android:layout_weight="1"
+                                            app:srcCompat="@drawable/ic_calendar" />
 
                                         <TextView
                                             android:id="@+id/txtDateEnd"
-                                            android:layout_width="match_parent"
+                                            android:layout_width="144dp"
                                             android:layout_height="wrap_content"
                                             android:layout_gravity="center_vertical"
                                             android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                                            android:text="@string/select_a_date"
+                                            android:fontFamily="@font/montserrat_regular"
+                                            android:text="Elige tus fechas"
                                             android:textColor="@color/text_opacity"
                                             android:textSize="@dimen/text_size_input"
-                                            android:textStyle="bold"
-                                            android:fontFamily="@font/montserrat_regular" />
+                                            android:textStyle="bold" />
                                     </LinearLayout>
+
                                 </LinearLayout>
                             </LinearLayout>
 
@@ -303,17 +301,14 @@
                                 android:background="@color/background_normal"
                                 android:orientation="horizontal">
 
-                                <androidx.appcompat.widget.AppCompatCheckBox
-                                    android:id="@+id/checkOneWay"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                                    android:layout_marginRight="@dimen/activity_horizontal_margin"
-                                    android:fontFamily="@font/montserrat_regular"
-                                    android:text="@string/one_way"
-                                    android:textColor="@android:color/black"
-                                    android:textSize="@dimen/text_size_body2"
-                                    app:buttonTint="@color/checkbox_state_list" />
+
+                                <CheckBox
+                                    android:id="@+id/checkSoloIda"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Solo Ida" />
+
                             </LinearLayout>
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>

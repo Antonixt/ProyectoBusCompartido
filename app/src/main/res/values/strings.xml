@@ -63,6 +63,23 @@
     <string name="accept_terms_conditions2">Acepto los términos y condiciones</string>
     <string name="want_subscribe">Deseo suscribirme al boletín y recibir promociones</string>
     <string name="surnames">Apellidos</string>
+    <string name="yape_title1">Crear Cuenta</string>
+    <string name="yape_title2">Agregar tarjeta</string>
+    <string name="yape_title3">Con esta tarjeta haras tus transferencias.</string>
+    <string name="esp">ESP</string>
+    <string name="eng">ENG</string>
+
+    <string name="dialog_message_negative">Cancel</string>
+    <string name="cancel">Cancelar</string>
+    <string name="titulo_temp">[ TU TÍTULO AQUÍ ]</string>
+    <string name="logo">Logo</string>
+    <string name="visanet_hint_card">Número de Tarjeta</string>
+    <string name="fintrax_content2">Tipo de cambio de acuerdo a la entidad bancaria.</string>
+    <string name="visanet_label_payment_method">Elige un medio de pago :</string>
+    <string name="pe_tarjeta_cd">Tarjeta de crédito y débito</string>
+    <string name="pe_transferencia">Trasferencias Bancarias y \10depósitos en efectivo</string>
+    <string name="btnFechaIR">Fecha de Ida y retorno</string>
+
 
     <string-array name="documento">
         <item>DNI</item>
